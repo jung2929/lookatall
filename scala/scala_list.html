@@ -29,13 +29,20 @@
             <!-- Header -->
             <header id="header">
                 <a href="../index.html" class="logo"><strong>개발다봐</strong> - Scala</a>
-                <!--<ul class="icons">
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
-                </ul>-->
+                <ul class="icons">
+                    <li><a href="https://twitter.com/?lang=ko" class="icon fa-twitter" target="_blank"><span
+                            class="label">Twitter</span></a></li>
+                    <li><a href="https://ko-kr.facebook.com/" class="icon fa-facebook" target="_blank"><span
+                            class="label">Facebook</span></a></li>
+                    <li><a href="https://www.snapchat.com/" class="icon fa-snapchat-ghost" target="_blank"><span
+                            class="label">Snapchat</span></a></li>
+                    <li><a href="https://github.com/" class="icon fa-github" target="_blank"><span
+                            class="label">Github</span></a></li>
+                    <li><a href="https://www.instagram.com/" class="icon fa-instagram" target="_blank"><span
+                            class="label">Instagram</span></a></li>
+                    <li><a href="https://medium.com/" class="icon fa-medium" target="_blank"><span
+                            class="label">Medium</span></a></li>
+                </ul>
             </header>
 
             <!-- Content -->
@@ -46,77 +53,252 @@
 
                 <span class="image main"><img src="../images/scala_list.svg" alt=""/></span>
 
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                    venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-                    sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
-                    massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-                    Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-                    hendrerit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                    libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                    ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                    Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                    Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-                    dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque
-                    leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum
-                    convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                <div class="entry-content">
+                    <h3>1. Java와 호환</h3>
+                    <p>Scala는 compile language이다. compile을 하면, Java Virtual Machine(JVM)상에서 동작하는 byte code가 만들어진다. 이미
+                        검증된 VM이라 할 수 있는 JVM에서 동작하기 때문에, ruby나 python등 VM을 필요로 하는 다른 언어 등과 비교하면 안정적이다. 게다가 compile 언어이기
+                        때문에 이러한 interpret 언어보다 빠르다.</p>
+                    <p>Scala는 JVM에서 동작하면서, Java의 문법과 아주 유사하기 때문에 Java의 모든 라이브러리를 그대로 사용할 수 있다. 수많은 Java로 된 open source
+                        라이브러리들이 모두 Scala의 라이브러리이기도 한 것이다!</p>
+                    <h3>2. 개발 생산성(productivity)</h3>
+                    <hr>
+                    <p>Scala는 object oriented language이면서 동시에 functional language이다. object oriented 방식으로 하다가도 필요한 경우,
+                        functional language적인 것들을 섞어 쓸 수 있다. 이것은 마치, 중국집에서 짜장면을 먹고나서 이태리 식당에나 어울릴 법한 티라미슈 케잌을 후식으로 먹는 것에
+                        비유할 수 있겠다.</p>
+                    <p>그러면, Scala에서 유용하게 쓰이는 functional language적인 feature 몇가지만 소개보겠다.</p>
+                    <h4>2.1 Loan Pattern</h4>
+                    <p><strong>From Java</strong><br>
+                        텍스트 파일을 읽어서 한줄씩 출력 해야 한다고 하면 Java로는 아래와 같이 만들게 될 것같다.</p>
+                    <div>
+                        <div id="highlighter_261770" class="syntaxhighlighter  java">
+                            <pre class="highlight"><code>BufferedReader bufferedReader = null;
+try {
+  bufferedReader = new BufferedReader(new FileReader(filename));
+  String line = null;
+  while ((line = bufferedReader.readLine()) != null) {
+    System.out.println(line);
+  }
+} catch (IOException ex) {
+  ex.printStackTrace();
+} finally {
+if (bufferedReader != null)
+  bufferedReader.close();
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <p>만약 위의 기능에 더해서, 텍스트 파일을 읽어서 한줄씩 읽어서 DB에 저장하는, 위와 유사한 코드를 만들고 싶다면 어떻게 해야 할까?</p>
+                    <p>실질적으로는 위의 코드에서 System.out.println() 부분만 DB로 저장하는 걸로 바꾸면 되지만, 아쉽게도 앞뒤로 있는 코드들은 다시 써주어야 한다. 다시 말해
+                        중복코드가 필연적으로 생긴다.</p>
+                    <p><strong>To Scala</strong><br>
+                        Scala로는 다음과 같이 정리가 가능하다.</p>
+                    <p>먼저 실제 line을 가지고 작업을 하는 것을 제외한, 앞뒤 부분에 해당하는 함수를 다음과 같이 만든다.</p>
+                    <div>
+                        <div id="highlighter_414930" class="syntaxhighlighter  scala">
+                            <pre class="highlight"><code>def withFile(filename:String)(work: String => Unit) {
+  var bufferedReader = null
+  try {
+    bufferedReader = new BufferedReader(new FileReader(filename))
+    String line = null;
+    while ((line = bufferedReader.readLine()) != null) {
+      work(line)
+    }
+  } catch {
+    case ex:IOException => ex.printStackTrace()
+  } finally {
+    if (bufferedReader != null)
+      bufferedReader.close()
+  }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <p>이 함수는 2개의 arguement를 받는다. 하나는 filename이고, 다른 하나는 work라는 이름의 함수이다. 7번째 줄에 보면 인자로 받은 work라는 함수를
+                        호출하고 있는 모습이 보인다. 이것이 Object Oriented 프로그래머에게는 조금 어려운 개념인데, Scala는 Functional language이기 때문에 함수도
+                        하나의 변수처럼 처리할 수 있다.</p>
+                    <p>중요한 건 이렇게 앞뒤 귀찮은 작업을 하는 함수를 빼어(refactoring) 놓으면 다음과 같이 재사용할 수 있다.</p>
+                    <p>– 한 줄씩 화면에 출력</p>
+                    <div>
+                        <div id="highlighter_717116" class="syntaxhighlighter  scala">
+                            <pre class="highlight"><code>withFile(filename) {
+  line => System.out.println(line)
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <p>– 한 줄씩 DB에 저장 (storeToDb라는 함수가 있다는 가정하에)</p>
+                    <div>
+                        <div id="highlighter_807002" class="syntaxhighlighter  scala">
+                            <pre class="highlight"><code>withFile(filename) {
+  line => storeToDb(line)
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <p>위와 같은 방법을 ‘loan pattern’이라고 한단다.</p>
+                    <h4>2.2 iteration</h4>
+                    <p>Scala에서는 collection의 iteration 관련해서 유용한 함수가 많다. 사실 내가 Java를 버리고 Scala를 쓰게 된 동기도, 빵꾸똥꾸 같은 Java의
+                        iteration 때문이다. 한동안 C#, Ruby 등으로 개발하다가, 다시 Java를 써야했는데, 오랜만에 써보는 Java iteration은 C 코딩하다가 어셈블리어를
+                        썼던 딱 그때를 생각나게 했다.</p>
+                    <p>그럼 예제 코드를 잠시 보겠다. numbers라는 collection에서 짝수인 것들만 추려내야 하는 경우에, Java에서는 다음과 같이 한다.</p>
+                    <div>
+                        <div id="highlighter_676475" class="syntaxhighlighter  java">
+                            <pre class="highlight"><code>for (Iterator iterator = numbers.iterator(); iterator.hasNext();) {
+  Integer number = iterator.next();
+  if (number % 2 == 0) {
+    iterator.remove();
+  }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <p>위 코드의 출처는 <a
+                            href="http://stackoverflow.com/questions/1683519/remove-even-numbers-from-an-arraylist"
+                            target="_blank">여기</a>.</p>
+                    <p>Scala에서는 다음과 같이 엘레강트하게 처리한다.</p>
+                    <div>
+                        <div id="highlighter_909915" class="syntaxhighlighter  scala">
+                            <pre class="highlight"><code>numbers.filter { n => n % 2 == 0 }</code></pre>
+                        </div>
+                    </div>
+                    <p>이 외에도 Ruby 프로그래머의 경우에 익숙할 map, count등 iteration을 위한 유용한 함수들이 많이 존재한다.</p>
+                    <h4>2.3 기타</h4>
+                    <p>꼭 functional language 적인 것 말고도, Java에서 불편하던 것들을 문법적으로 개선한 부분이 많다. Singleton 지원, 변수의 lazy 초기화 지원
+                        등등 여러가지가 있는데, 길어질 것 같으니 생략하도록 하겠다. ^^</p>
+                    <h3>3. 성능(performance)</h3>
+                    <hr>
+                    <p>기본적으로 Scala는 JVM에서 동작하기 때문에 Java 만큼의 성능이 나온다. 물론 C나 C++과 같이, compile 결과로 machine code가 나오는 언어에
+                        비해서는 느리지만, Ruby, Python, JavaScript등의 interpret 언어보다는 월등히 빠르다.</p>
+                    <p>여기에, Scala에서 제공하는 Actor를 이용해 message 방식의 프로그래밍을 하면 훨씬 빠를 수 있다.</p>
+                    <h4>3.1 Actor?</h4>
+                    <p>Actor는 Java로 치면 일종의 Thread이다. Scala에서는 Actor에게 어떤 작업을 하라고 message를 보내면, Actor는 작업을 해야할 것들을 자신의
+                        queue(mailbox라고 불린다)에 넣어두고, 하나씩 꺼내서 처리한다. Actor에게 message를 보낸 쪽에서는 message의 결과를 꼭 기다려야 하는 상황이
+                        아니면, 자신이 하던 작업을 그냥 쭈욱 한다. 다시 말해 비동기적(asynchronous)으로 처리한다. 좀더 자세한 설명은 <a
+                                href="http://ofps.oreilly.com/titles/9780596155957/Concurrency.html"
+                                target="_blank">여기</a>를 참고.</p>
+                    <p>Actor가 대용량 처리시 빠른 이유는,<br>
+                        1) 비동기적으로 프로그래밍할 수 있도록 하며<br>
+                        2) 각 Actor가 mailbox에 메시지를 queueing을 해가면서, 동시에 엄청나게 많은 메시지를 처리할 수 있기 때문이다.</p>
+                    <p>사실 actor, message의 개념은 erlang에서 차용한 개념이다. <a
+                            href="https://ppassa.wordpress.com/2012/01/28/server-solution-benchmark/" target="_blank">이전의
+                        포스팅</a>에서 잠시 언급한 적인 있는데, erlang은 대용량 처리에서 훌륭한 performance로 유명하다.</p>
+                    <h3>4. Actor로 두 마리 토끼(productivity, performance) 잡기</h3>
+                    <p>웹 서비스에서 그 규모가 커지면, 흔히 client로부터 최초의 request를 받는 frontend 서버와 좀더 세분화된 작업을 처리하는 backend 서버로 그 구조가
+                        진화하게 된다. Twitter역시 초기에는 Ruby on Rails의 한 종류의 서버만 있었지만, traffic이 커가면서 frontend/backend 서버 방식으로
+                        진화했다. 좀더 자세한 내용은 <a
+                                href="http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster"
+                                target="_blank">여기</a> 참고.</p>
+                    <p style="text-align:center;"><img class="aligncenter"
+                                                       src="https://ppassa.files.wordpress.com/2012/05/finagle2bdiagram.png?w=600&amp;h=301"
+                                                       alt="" width="600" height="301"> – Twitter에서의 frontend/backend 서버
+                        구조 (출처: <a
+                                href="http://engineering.twitter.com/2011/08/finagle-protocol-agnostic-rpc-system.html"
+                                target="_blank">Twitter Engineering Blog</a>)</p>
+                    <p>frontend 서버가 client로부터 최초의 request를 받아서 여러 backend 서버에 다시 작업을 지시하고, 결과를 받아 최종 response를 client에
+                        보내는 경우를 생각해보자. 가급적 backend 서버의 호출은 비동기적으로 이루어저야 frontend 서버는 좀더 대용량을 처리할 수 있다.</p>
+                    <h4>4.1 가상 시나리오</h4>
+                    <p>Actor의 훌륭함(?)을 설명하기 위해 다음과 같은 트위터에서의 가상의 request를 생각해보았다.</p>
+                    <ol>
+                        <li>어떤 사용자 A의 가장 최근에 등록된 follower B를 찾아서</li>
+                        <li>B 사용자의 트윗 목록 중 최신 트윗 하나를 얻어와</li>
+                        <li>이 트윗의 RT 카운트를 얻는다.</li>
+                    </ol>
+                    <p>물론 이 시나리오는 조금 억지스러운 면이 있지만, 서비스를 만들다 보면 이렇게 backend 서버와 3단 이상의 콤보를 해야하는 경우는 사실 비일비재하다.</p>
+                    <p>서비스 구조는 다음과 같이 되어 있다고 가정하겠다.</p>
+                    <ul>
+                        <li>Follower를 알려주는 backend 서버와의 연동은 followerActor에서 담당</li>
+                        <li>트윗 목록을 알려주는 backend 서버와의 연동은 tweetActor가 담당</li>
+                        <li>RT 카운트를 알려주는 backend 서버와의 연동은 statsActor가 담당</li>
+                    </ul>
+                    <h4>4.2 구현</h4>
+                    <p>이것은 다음과 같이 구현될 수 있다.</p>
+                    <div>
+                        <div id="highlighter_834381" class="syntaxhighlighter  scala">
+                            <pre class="highlight"><code>val futureResult = for {
+    follower <- (followerActor ? GetLatestFollower(userId)).mapTo[User]
+    tweet <- (tweetActor ? GetLastestTweet(follower.id)).mapTo[Tweet]
+    count <- (statsActor ? GetRetweetCount(tweet.id)).mapTo[Int]
+} yield count
 
-                <hr class="major"/>
+futureResult onSuccess {
+  case n:Int => //처리
+}
 
-                <h2>Interdum sed dapibus</h2>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                    venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-                    sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
-                    massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-                    Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-                    hendrerit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                    libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                    ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                    Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                    Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum
-                    sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit
-                    amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-                    hendrerit tristique lorem ipsum dolor.</p>
+futureResult onFailure {
+  case e:Exception => //처리
+}</code></pre>
+                        </div>
+                    </div>
+                    <p>1~5줄을 보면, 각 backend 서비스에 대해서 하나씩 별도로 처리할 필요없이, for를 이용해 처리하고 있다. 2~4 줄에서 actor에 대한 호출은 비동기적으로
+                        처리되고, 성공적인 결과가 나올 때만 ‘&lt;-‘ 연산자 앞의 변수 이름으로 값이 저장된다.</p>
+                    <p>성공적으로 모든 backend 서버에 대한 작업들이 끝나면 8줄 부분이 호출된다. 중간에 어떤 작업에서라도 exception이 일어나면, 12번 줄 부분이 호출된다.</p>
+                    <p>참고로 아래 코드는 actor에게 메시지를 보내고 결과를 기다리기 위해 ‘?’라는 연산자를 사용했다. 또 onSuccess, onFailure 등을 통해 callback을
+                        등록했는데, 이것은 scala 언어 자체에서 지원하는 것은 아니고, <a href="http://akka.io" target="_blank">Akka</a>라는 라이브러리를
+                        이용하면 가능하다.</p>
+                    <h3>마치며</h3>
+                    <hr class="major"/>
+                    <p>최근에 node.js가 각광받고 있다. 무엇보다 node.js의 장점은 비동기적으로 쉽게 코딩할 수 있도록 해주는 것이 아닐까 한다. 혹시 Java 개발자의 경우에,
+                        node.js의 장점에 끌린다면, 이웃사촌인 Scala를 먼저 검토해보라고 권유해보고 싶다. 안정적인 VM, 이미 풍부한 open source들, 거기에 생산성을
+                        배가시켜주는 scala의 문법. 또, 최근에는 Eclipse나 IntelliJ 같은 IDE에서 Scala 지원이 잘되고 있다.</p>
+                    <p>많이 부족한 글을 끝까지 읽어주신 분들께 진심으로, 정말로 감사한 마음을 전하고 싶다. 내용 중에 설명이 부족했거나 또는 틀린 내용있으면 꼭꼭꼭 코멘트를!</p>
+                </div>
 
-                <hr class="major"/>
+                <p>위 글의 출처는 <a
+                        href="https://ppassa.wordpress.com/2012/05/23/scala_for_java_programmer/"
+                        target="_blank">여기</a> 입니다.</p>
 
-                <h2>Magna etiam veroeros</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                    libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                    ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                    Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                    Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
-                    dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque
-                    leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum
-                    convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                <div class="another_category another_category_color_gray">
+                    <h4>'개발다봐&nbsp;&gt;&nbsp;<a href="scala_list.html">Scala</a>'
+                        카테고리의 다른 글</h4>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>
+                                <a href="http://docs.scala-lang.org/ko/tutorials/scala-for-java-programmers.html">스칼라 튜토리얼</a>
+                            </th>
+                            <td>
+                                한글
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a href="http://www.scala-lang.org/api/current/scala/index.html">API Docs</a>
+                            </th>
+                            <td>
+                                영어
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a href="https://twitter.github.io/scala_school/ko/">스칼라학교</a>
+                            </th>
+                            <td>
+                                한글
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <a href="https://ppassa.wordpress.com/2012/02/19/getting_started_scala/">최세윤님의 스칼라 강의</a>
+                            </th>
+                            <td>
+                                한글
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <hr class="major"/>
-
-                <h2>Lorem aliquam bibendum</h2>
-                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-                    venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
-                    sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
-                    massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
-                    Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
-                    hendrerit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                    libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                    ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                    Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                    senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                    Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-
+                <ul class="pagination">
+                    <li><span class="button disabled">Prev</span></li>
+                    <li><a href="#" class="page active">1</a></li>
+                    <li><a href="#" class="page">2</a></li>
+                    <li><a href="#" class="page">3</a></li>
+                    <li><span>&hellip;</span></li>
+                    <li><a href="#" class="page">8</a></li>
+                    <li><a href="#" class="page">9</a></li>
+                    <li><a href="#" class="page">10</a></li>
+                    <li><a href="#" class="button">Next</a></li>
+                </ul>
             </section>
 
         </div>
@@ -127,16 +309,16 @@
         <div class="inner">
 
             <!-- Search -->
-            <section id="search" class="alt">
+            <!--<section id="search" class="alt">
                 <form method="post" action="#">
                     <input type="text" name="query" id="query" placeholder="Search"/>
                 </form>
-            </section>
+            </section>-->
 
             <!-- Menu -->
             <nav id="menu">
                 <header class="major">
-                    <h2>Menu</h2>
+                    <h4>Menu</h4>
                 </header>
                 <ul>
                     <li><a href="../index.html">Homepage</a></li>
@@ -145,21 +327,34 @@
                         <ul>
                             <li><a href="../kotlin/kotlin_list.html">Kotlin 소개</a></li>
                             <li><a href="https://kotlinlang.org/docs/tutorials/">튜토리얼 (영어)</a></li>
-                            <li><a href="http://import.re/kotlin_on_android/#1">허재위의 코틀린 설명 (한글)</a></li>
                             <li>
                                 <a href="https://docs.google.com/document/d/1ReS3ep-hjxWA8kZi0YqDbEhCqTt29hG8P44aA9W0DM8/edit#heading=h.qaif7to7hypj">JakeWharton의
                                     문서 (영어)</a></li>
                             <li><a href="https://antonioleiva.com/kotlin/">Antonio Leiva의 강의 (영어)</a></li>
+                            <hr>
+                            <li><a href="http://kotlin.kr/">코틀린 코리아 웹사이트 (한글)</a></li>
+                            <li><a href="https://news.realm.io/kr/news/android-kotlin/">Realm 블로그: Kotlin (한글)</a></li>
+                            <li><a href="https://news.realm.io/kr/news/compose-everything-rx-kotlin">허재위님의 드로이드나이츠
+                                발표 (한글)</a></li>
+                            <li><a href="http://import.re/kotlin_on_android/#1">허재위님의 코틀린 설명 (한글)</a></li>
+                            <li><a href="https://news.realm.io/kr/news/kotlin-let-run-apply-lateinit/">허재위님의 예제로 배우는
+                                아름다운 코틀린 (한글)</a></li>
+                            <li><a href="https://www.udemy.com/the_next_android_kotlin/?couponCode=B-ARTICLE279933">권태환
+                                님의 한국어 Kotlin 강의 (한글,유료)</a></li>
+                            <li><a href="https://news.realm.io/kr/news/kotlin-1/">김용욱님의 코틀린 시리즈 (한글)</a></li>
+                            <li><a href="https://news.realm.io/kr/news/kotlin-intro/">김상우님의 코틀린 소개 (한글)</a></li>
                         </ul>
                     </li>
                     <li>
                         <span class="opener">Scala</span>
                         <ul>
-                            <li><a href="scala_list.html">Scala 소개</a></li>
+                            <li><a href="../scala/scala_list.html">Scala 소개</a></li>
                             <li><a href="http://docs.scala-lang.org/ko/tutorials/scala-for-java-programmers.html">튜토리얼
                                 (한글)</a></li>
                             <li><a href="http://www.scala-lang.org/api/current/scala/index.html">API Docs (영어)</a></li>
                             <li><a href="https://twitter.github.io/scala_school/ko/">스칼라학교 (한글)</a></li>
+                            <li><a href="https://ppassa.wordpress.com/2012/02/19/getting_started_scala/">최세윤님의 스칼라 강의
+                                (한글)</a></li>
                         </ul>
                     </li>
                     <li>
@@ -266,7 +461,8 @@
                             <!-- Framework -->
                             <hr>
                             Framework
-                            <li><a href="https://www.slideshare.net/findstar/xecon2014-laravel">Laravel Framework 란? (한글, 실습가능)</a></li>
+                            <li><a href="https://www.slideshare.net/findstar/xecon2014-laravel">Laravel Framework 란?
+                                (한글, 실습가능)</a></li>
                             <li><a href="https://laravel.com/docs/5.4/">Laravel Framework (영어, 업데이트반영이 빠름)</a></li>
                             <li><a href="https://www.laravel.co.kr/">Laravel 코리아 (한글, 업데이트반영이 늦음)</a></li>
                             <li><a href="https://laravel.kr/">Laravel 코리아 커뮤니티 (한글, 업데이트반영이 늦음)</a></li>
@@ -278,7 +474,7 @@
             <!-- Section -->
             <section>
                 <header class="major">
-                    <h2>개발 작업물</h2>
+                    <h4>개발 작업물</h4>
                 </header>
                 <div class="mini-posts">
                     <article>
@@ -303,7 +499,7 @@
             <!-- Section -->
             <section>
                 <header class="major">
-                    <h2>개발자 정보</h2>
+                    <h4>개발자 정보</h4>
                 </header>
                 <p>가천대학교를 다니는 컴퓨터공학과 학생입니다. IT 산업체를 다니며 실력을 쌓았습니다.</p>
                 <div> 사용 경력 <br/>
