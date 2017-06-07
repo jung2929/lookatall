@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ffb504d-d315-4c3f-acd7-93095ae017b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/php_list.html" afterPath="$PROJECT_DIR$/php/php_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scala/scala_list.html" afterPath="$PROJECT_DIR$/scala/scala_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,12 +18,15 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7239">
-              <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="387">
+              <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+              <folding>
+                <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,7 +34,7 @@
       <file leaf-file-name="kotlin_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kotlin/kotlin_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="1792">
               <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="48" />
               <folding>
                 <element signature="e#5281#5285#0" expanded="true" />
@@ -50,16 +52,11 @@
       <file leaf-file-name="scala_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scala/scala_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="188" column="83" lean-forward="false" selection-start-line="188" selection-start-column="83" selection-end-line="188" selection-end-column="83" />
+            <state relative-caret-position="8596">
+              <caret line="307" column="21" lean-forward="false" selection-start-line="307" selection-start-column="21" selection-end-line="307" selection-end-column="21" />
               <folding>
-                <element signature="n#style#0;n#p#26;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#12439#12443#0" expanded="true" />
-                <element signature="e#13704#13710#0" expanded="true" />
-                <element signature="e#13710#13714#0" expanded="true" />
-                <element signature="e#13714#13720#0" expanded="true" />
-                <element signature="e#15637#15645#1" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1496795879096" expanded="true" signature="28931:28976" ph="..." />
+                <marker date="1496795879096" expanded="true" signature="28931:28983" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,7 +65,7 @@
       <file leaf-file-name="elements.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/elements.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="11088">
               <caret line="396" column="59" lean-forward="false" selection-start-line="396" selection-start-column="56" selection-end-line="396" selection-end-column="59" />
               <folding>
                 <element signature="e#10017#10025#1" expanded="true" />
@@ -77,26 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="java_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1119">
-              <caret line="480" column="10" lean-forward="false" selection-start-line="480" selection-start-column="10" selection-end-line="480" selection-end-column="10" />
-              <folding>
-                <element signature="e#8839#8845#0" expanded="true" />
-                <element signature="e#8845#8849#0" expanded="true" />
-                <element signature="e#8849#8855#0" expanded="true" />
-                <element signature="e#12573#12581#1" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="javascript_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/javascript_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="853">
+            <state relative-caret-position="5992">
               <caret line="214" column="16" lean-forward="false" selection-start-line="214" selection-start-column="16" selection-end-line="261" selection-end-column="21" />
               <folding>
                 <element signature="e#10155#10161#0" expanded="true" />
@@ -111,27 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="python_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/python_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
-              <caret line="120" column="90" lean-forward="true" selection-start-line="120" selection-start-column="90" selection-end-line="120" selection-end-column="90" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#7883#7889#0" expanded="true" />
-                <element signature="e#8293#8299#0" expanded="true" />
-                <element signature="e#8687#8693#0" expanded="true" />
-                <element signature="e#9257#9263#0" expanded="true" />
-                <element signature="e#9263#9267#0" expanded="true" />
-                <element signature="e#9267#9273#0" expanded="true" />
-                <element signature="e#11969#11977#1" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="php_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="php_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/php_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
@@ -211,13 +172,13 @@
         <option value="$PROJECT_DIR$/images/kotlin_list.svg" />
         <option value="$PROJECT_DIR$/images/php_list.svg" />
         <option value="$PROJECT_DIR$/images/python_list.svg" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascript/javascript_list.html" />
         <option value="$PROJECT_DIR$/java/java_list.html" />
         <option value="$PROJECT_DIR$/kotlin/kotlin_list.html" />
         <option value="$PROJECT_DIR$/python/python_list.html" />
         <option value="$PROJECT_DIR$/scala/scala_list.html" />
         <option value="$PROJECT_DIR$/php/php_list.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -228,10 +189,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -251,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -350,7 +312,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,14 +440,16 @@
       <workItem from="1496681911587" duration="188000" />
       <workItem from="1496715672129" duration="17184000" />
       <workItem from="1496754304569" duration="515000" />
+      <workItem from="1496795929413" duration="985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43286000" />
+    <option name="totallyTimeSpent" value="44271000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -522,31 +485,13 @@
         <state relative-caret-position="5092">
           <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
           <folding>
-            <element signature="n#style#0;n#p#26;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12439#12443#0" expanded="true" />
-            <element signature="e#13704#13710#0" expanded="true" />
-            <element signature="e#13710#13714#0" expanded="true" />
-            <element signature="e#13714#13720#0" expanded="true" />
-            <element signature="e#15637#15645#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496795879096" expanded="true" signature="28931:28976" ph="..." />
+            <marker date="1496795879096" expanded="true" signature="28931:28983" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5092">
-          <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
-          <folding>
-            <element signature="e#8839#8845#0" expanded="true" />
-            <element signature="e#8845#8849#0" expanded="true" />
-            <element signature="e#8849#8855#0" expanded="true" />
-            <element signature="e#12573#12581#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_list.html" />
     <entry file="file://$PROJECT_DIR$/javascript/javascript_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5092">
@@ -602,29 +547,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/python_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5092">
-          <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7883#7889#0" expanded="true" />
-            <element signature="e#8293#8299#0" expanded="true" />
-            <element signature="e#8687#8693#0" expanded="true" />
-            <element signature="e#9257#9263#0" expanded="true" />
-            <element signature="e#9263#9267#0" expanded="true" />
-            <element signature="e#9267#9273#0" expanded="true" />
-            <element signature="e#11969#11977#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python/python_list.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -633,31 +564,13 @@
         <state relative-caret-position="5092">
           <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
           <folding>
-            <element signature="n#style#0;n#p#26;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12439#12443#0" expanded="true" />
-            <element signature="e#13704#13710#0" expanded="true" />
-            <element signature="e#13710#13714#0" expanded="true" />
-            <element signature="e#13714#13720#0" expanded="true" />
-            <element signature="e#15637#15645#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496795879096" expanded="true" signature="28931:28976" ph="..." />
+            <marker date="1496795879096" expanded="true" signature="28931:28983" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5092">
-          <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
-          <folding>
-            <element signature="e#8839#8845#0" expanded="true" />
-            <element signature="e#8845#8849#0" expanded="true" />
-            <element signature="e#8849#8855#0" expanded="true" />
-            <element signature="e#12573#12581#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_list.html" />
     <entry file="file://$PROJECT_DIR$/javascript/javascript_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5092">
@@ -713,29 +626,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/python_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5092">
-          <caret line="268" column="136" lean-forward="false" selection-start-line="268" selection-start-column="136" selection-end-line="268" selection-end-column="136" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7883#7889#0" expanded="true" />
-            <element signature="e#8293#8299#0" expanded="true" />
-            <element signature="e#8687#8693#0" expanded="true" />
-            <element signature="e#9257#9263#0" expanded="true" />
-            <element signature="e#9263#9267#0" expanded="true" />
-            <element signature="e#9267#9273#0" expanded="true" />
-            <element signature="e#11969#11977#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/python/python_list.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="21" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="38" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -744,13 +643,8 @@
         <state relative-caret-position="874">
           <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
           <folding>
-            <element signature="n#style#0;n#p#26;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12439#12443#0" expanded="true" />
-            <element signature="e#13704#13710#0" expanded="true" />
-            <element signature="e#13710#13714#0" expanded="true" />
-            <element signature="e#13714#13720#0" expanded="true" />
-            <element signature="e#15637#15645#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496795879096" expanded="true" signature="28931:28976" ph="..." />
+            <marker date="1496795879096" expanded="true" signature="28931:28983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -771,7 +665,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -790,7 +687,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,7 +709,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -828,7 +731,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -836,7 +742,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,7 +764,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -874,7 +786,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -908,77 +823,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/java_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/javascript_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/kotlin_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/php_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/python_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/scala_list.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="112" lean-forward="false" selection-start-line="0" selection-start-column="112" selection-end-line="0" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7239">
-          <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/python_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="120" column="90" lean-forward="true" selection-start-line="120" selection-start-column="90" selection-end-line="120" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7883#7889#0" expanded="true" />
-            <element signature="e#8293#8299#0" expanded="true" />
-            <element signature="e#8687#8693#0" expanded="true" />
-            <element signature="e#9257#9263#0" expanded="true" />
-            <element signature="e#9263#9267#0" expanded="true" />
-            <element signature="e#9267#9273#0" expanded="true" />
-            <element signature="e#11969#11977#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/images/java_list.svg" />
+    <entry file="file://$PROJECT_DIR$/images/javascript_list.svg" />
+    <entry file="file://$PROJECT_DIR$/images/kotlin_list.svg" />
+    <entry file="file://$PROJECT_DIR$/images/php_list.svg" />
+    <entry file="file://$PROJECT_DIR$/images/python_list.svg" />
+    <entry file="file://$PROJECT_DIR$/images/scala_list.svg" />
+    <entry file="file://$PROJECT_DIR$/python/python_list.html" />
     <entry file="file://$PROJECT_DIR$/javascript/javascript_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
+        <state relative-caret-position="5992">
           <caret line="214" column="16" lean-forward="false" selection-start-line="214" selection-start-column="16" selection-end-line="261" selection-end-column="21" />
           <folding>
             <element signature="e#10155#10161#0" expanded="true" />
@@ -994,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kotlin/kotlin_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="1792">
           <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="48" />
           <folding>
             <element signature="e#5281#5285#0" expanded="true" />
@@ -1008,23 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1119">
-          <caret line="480" column="10" lean-forward="false" selection-start-line="480" selection-start-column="10" selection-end-line="480" selection-end-column="10" />
-          <folding>
-            <element signature="e#8839#8845#0" expanded="true" />
-            <element signature="e#8845#8849#0" expanded="true" />
-            <element signature="e#8849#8855#0" expanded="true" />
-            <element signature="e#12573#12581#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_list.html" />
     <entry file="file://$PROJECT_DIR$/elements.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="11088">
           <caret line="396" column="59" lean-forward="false" selection-start-line="396" selection-start-column="56" selection-end-line="396" selection-end-column="59" />
           <folding>
             <element signature="e#10017#10025#1" expanded="true" />
@@ -1034,16 +875,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scala/scala_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="188" column="83" lean-forward="false" selection-start-line="188" selection-start-column="83" selection-end-line="188" selection-end-column="83" />
+        <state relative-caret-position="8596">
+          <caret line="307" column="21" lean-forward="false" selection-start-line="307" selection-start-column="21" selection-end-line="307" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#p#26;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12439#12443#0" expanded="true" />
-            <element signature="e#13704#13710#0" expanded="true" />
-            <element signature="e#13710#13714#0" expanded="true" />
-            <element signature="e#13714#13720#0" expanded="true" />
-            <element signature="e#15637#15645#1" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1496795879096" expanded="true" signature="28931:28976" ph="..." />
+            <marker date="1496795879096" expanded="true" signature="28931:28983" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1066,6 +902,17 @@
             <element signature="e#8189#8193#0" expanded="true" />
             <element signature="e#8193#8199#0" expanded="true" />
             <element signature="e#11398#11406#1" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="123" column="5" lean-forward="false" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
